@@ -65,7 +65,7 @@ namespace xadrez
                 }
 
                 // #jogadaespecial en passant
-                if (posicao.Linha == 3)
+              //  if (posicao.Linha == 3)
               //  {
               //      Posicao esquerda = new Posicao(posicao.Linha, posicao.Coluna - 1);
               //      if (tab.posicaoValida(esquerda) && existeInimigo(esquerda) && tab.peca(esquerda) == partida.vulneravelEnPassant)
