@@ -30,7 +30,7 @@ namespace xadrez_console
 
             for (int i = 0; i < tab.linhas; i++)
             {
-                System.Console.Write(8 - i + " ");
+                Console.Write(8 - i + " ");
                 for (int j = 0; j < tab.colunas; j++)
                 {
                     if(posicoesPossiveis[i, j])
@@ -44,9 +44,9 @@ namespace xadrez_console
                     Console.BackgroundColor = fundoOriginal;
 
                 }
-                System.Console.WriteLine();
+                Console.WriteLine();
             }
-            System.Console.WriteLine("  a b c d e f g h");
+            Console.WriteLine("  a b c d e f g h");
             Console.BackgroundColor = fundoOriginal;
 
         }
@@ -61,9 +61,10 @@ namespace xadrez_console
 
         public static void imprimirPeca(Peca peca)
         {
+
             if (peca == null)
             {
-                Console.WriteLine("- ");
+                Console.Write("- ");
             }
             else
             {
@@ -78,8 +79,7 @@ namespace xadrez_console
                     Console.Write(peca);
                     Console.ForegroundColor = aux;
                 }
-                Console.WriteLine(" ");
-
+                Console.Write(" ");
             }
         }
 
